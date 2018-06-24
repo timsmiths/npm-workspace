@@ -6,7 +6,7 @@
 5 silly isInitialized true
 6 silly existsSync /Users/timsmiths/Documents/example-workspace/VERSION
 7 silly initialize attempt
-8 info current version 0.0.2
+8 info current version 0.0.7
 9 silly isDetachedHead
 10 silly getCurrentBranch
 11 verbose getCurrentBranch master
@@ -18,45 +18,122 @@
 17 silly hasTags
 18 verbose hasTags true
 19 silly getLastTag
-20 verbose getLastTag v0.0.3
-21 info Comparing with v0.0.3.
-22 silly diffSinceIn v0.0.3 packages/0-module
-23 silly diff packages/0-module/index.js
+20 verbose getLastTag v0.0.7
+21 info Comparing with v0.0.7.
+22 silly diffSinceIn v0.0.7 packages/0-module
 23 silly diff packages/0-module/package.json
-24 silly diffSinceIn v0.0.3 packages/1-module
+24 silly diffSinceIn v0.0.7 packages/1-module
 25 silly diff packages/1-module/index.js
 25 silly diff packages/1-module/package.json
-26 verbose updated @timsmith/0-module
-27 verbose updated @timsmith/1-module
+26 verbose updated @timsmiths01/0-module
+27 verbose updated @timsmiths01/1-module
 28 info Checking for prereleased packages...
 29 silly collectDependents
-30 silly isPackageDependentOf @timsmith/0-module @timsmith/0-module
-31 silly isPackageDependentOf @timsmith/0-module @timsmith/1-module
-32 silly isPackageDependentOf @timsmith/1-module @timsmith/0-module
-33 silly isPackageDependentOf @timsmith/1-module @timsmith/1-module
+30 silly isPackageDependentOf @timsmiths01/0-module @timsmiths01/0-module
+31 silly isPackageDependentOf @timsmiths01/0-module @timsmiths01/1-module
+32 silly isPackageDependentOf @timsmiths01/1-module @timsmiths01/0-module
+33 silly isPackageDependentOf @timsmiths01/1-module @timsmiths01/1-module
 34 silly collectUpdates
-35 verbose has filtered update @timsmith/0-module
-36 verbose has filtered update @timsmith/1-module
+35 verbose has filtered update @timsmiths01/0-module
+36 verbose has filtered update @timsmiths01/1-module
 37 silly initialize success
 38 silly execute attempt
 39 silly addFile /Users/timsmiths/Documents/example-workspace/lerna.json
-40 silly runScriptSync preversion @timsmiths/example-workspace
-41 silly runScriptSync preversion @timsmith/0-module
-42 silly runScriptSync version @timsmith/0-module
-43 silly runScriptSync preversion @timsmith/1-module
-44 silly runScriptSync version @timsmith/1-module
-45 silly runScriptSync version @timsmiths/example-workspace
+40 silly runScriptSync preversion @timsmiths01/example-workspace
+41 silly runScriptSync preversion @timsmiths01/0-module
+42 silly runScriptSync version @timsmiths01/0-module
+43 silly runScriptSync preversion @timsmiths01/1-module
+44 silly runScriptSync version @timsmiths01/1-module
+45 silly runScriptSync version @timsmiths01/example-workspace
 46 silly addFile /Users/timsmiths/Documents/example-workspace/packages/0-module/package.json
 47 silly addFile /Users/timsmiths/Documents/example-workspace/packages/1-module/package.json
-48 silly commit v0.0.3
-49 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.3' ]
-50 silly addTag v0.0.3
-51 error execute caught error
-52 error Error: fatal: tag 'v0.0.3' already exists
-52 error
-52 error     at Function.module.exports.sync (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-52 error     at Function.execSync (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-52 error     at Function.addTag (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/lib/GitUtilities.js:100:39)
-52 error     at PublishCommand.gitCommitAndTagVersion (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/lib/commands/PublishCommand.js:779:30)
-52 error     at PublishCommand.commitAndTagUpdates (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/lib/commands/PublishCommand.js:740:27)
-52 error     at PublishCommand.execute (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/lib/commands/PublishCommand.js:329:14)
+48 silly commit v0.0.8
+49 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.8' ]
+50 silly addTag v0.0.8
+51 silly runScriptSync postversion @timsmiths01/0-module
+52 silly runScriptSync postversion @timsmiths01/1-module
+53 silly runScriptSync postversion @timsmiths01/example-workspace
+54 info publish Publishing packages to npm...
+55 silly existsSync /Users/timsmiths/Documents/example-workspace/packages/0-module/scripts/prepublish.js
+56 verbose execScript No prepublish script found at /Users/timsmiths/Documents/example-workspace/packages/0-module/scripts/prepublish.js
+57 silly existsSync /Users/timsmiths/Documents/example-workspace/packages/1-module/scripts/prepublish.js
+58 verbose execScript No prepublish script found at /Users/timsmiths/Documents/example-workspace/packages/1-module/scripts/prepublish.js
+59 verbose publishing @timsmiths01/0-module
+60 silly publishTaggedInDir latest 0-module
+61 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/0-module' }
+62 verbose publishing @timsmiths01/1-module
+63 silly publishTaggedInDir latest 1-module
+64 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/1-module' }
+65 error publish Retrying failed publish: @timsmiths01/1-module
+66 verbose publish error undefined
+67 verbose publishing @timsmiths01/1-module
+68 silly publishTaggedInDir latest 1-module
+69 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/1-module' }
+70 error publish Retrying failed publish: @timsmiths01/1-module
+71 verbose publish error undefined
+72 verbose publishing @timsmiths01/1-module
+73 silly publishTaggedInDir latest 1-module
+74 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/1-module' }
+75 info published @timsmiths01/0-module
+76 silly existsSync /Users/timsmiths/Documents/example-workspace/packages/0-module/scripts/postpublish.js
+77 verbose execScript No postpublish script found at /Users/timsmiths/Documents/example-workspace/packages/0-module/scripts/postpublish.js
+78 error publish Retrying failed publish: @timsmiths01/1-module
+79 verbose publish error undefined
+80 verbose publishing @timsmiths01/1-module
+81 silly publishTaggedInDir latest 1-module
+82 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/1-module' }
+83 error publish Retrying failed publish: @timsmiths01/1-module
+84 verbose publish error undefined
+85 verbose publishing @timsmiths01/1-module
+86 silly publishTaggedInDir latest 1-module
+87 silly getExecOpts { cwd: '/Users/timsmiths/Documents/example-workspace/packages/1-module' }
+88 error publish Ran out of retries while publishing @timsmiths01/1-module Error: Command failed: npm publish --tag latest
+88 error publish npm notice
+88 error publish npm notice 📦  @timsmiths01/1-module@0.0.8
+88 error publish npm notice === Tarball Contents ===
+88 error publish npm notice 217B package.json
+88 error publish npm notice 22B  index.js
+88 error publish npm notice === Tarball Details ===
+88 error publish npm notice name:          @timsmiths01/1-module
+88 error publish npm notice version:       0.0.8
+88 error publish npm notice package size:  299 B
+88 error publish npm notice unpacked size: 239 B
+88 error publish npm notice shasum:        6cd84364205e262f7a11dcc64cc652595e2ce48c
+88 error publish npm notice integrity:     sha512-joG3LP2kIOCyV[...]+rx/WL3R1Lqrw==
+88 error publish npm notice total files:   2
+88 error publish npm notice
+88 error publish npm ERR! publish Failed PUT 402
+88 error publish npm ERR! code E402
+88 error publish npm ERR! You must sign up for private packages : @timsmiths01/1-module
+88 error publish
+88 error publish npm ERR! A complete log of this run can be found in:
+88 error publish npm ERR!     /Users/timsmiths/.npm/_logs/2018-06-24T20_28_05_287Z-debug.log
+88 error publish
+88 error publish     at Promise.all.then.arr (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+88 error publish     at <anonymous>
+88 error publish     at process._tickCallback (internal/process/next_tick.js:182:7)
+89 error execute callback with error
+90 error Error: Command failed: npm publish --tag latest
+90 error npm notice
+90 error npm notice 📦  @timsmiths01/1-module@0.0.8
+90 error npm notice === Tarball Contents ===
+90 error npm notice 217B package.json
+90 error npm notice 22B  index.js
+90 error npm notice === Tarball Details ===
+90 error npm notice name:          @timsmiths01/1-module
+90 error npm notice version:       0.0.8
+90 error npm notice package size:  299 B
+90 error npm notice unpacked size: 239 B
+90 error npm notice shasum:        6cd84364205e262f7a11dcc64cc652595e2ce48c
+90 error npm notice integrity:     sha512-joG3LP2kIOCyV[...]+rx/WL3R1Lqrw==
+90 error npm notice total files:   2
+90 error npm notice
+90 error npm ERR! publish Failed PUT 402
+90 error npm ERR! code E402
+90 error npm ERR! You must sign up for private packages : @timsmiths01/1-module
+90 error
+90 error npm ERR! A complete log of this run can be found in:
+90 error npm ERR!     /Users/timsmiths/.npm/_logs/2018-06-24T20_28_05_287Z-debug.log
+90 error
+90 error     at Promise.all.then.arr (/Users/timsmiths/.nvm/versions/node/v9.11.1/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+90 error     at <anonymous>

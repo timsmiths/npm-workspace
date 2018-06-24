@@ -1,10 +1,15 @@
 {
-  "name": "@timsmiths/example-workspace",
-  "version": "0.0.5",
+  "name": "@timsmiths01/example-workspace",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "MIT",
+  "repository": "https://github.com/timsmiths/npm-workspace",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "lerna": "^2.11.0"
-  },
-  "author": "Tim Smith <timsmiths@icloud.com>"
+  }
 }
