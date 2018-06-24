@@ -1,0 +1,10 @@
+{
+  "name": "example-workspace",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "author": "Tim Smith <timsmiths@icloud.com>"
+}
