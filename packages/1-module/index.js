@@ -1,8 +1,3 @@
-// My Module
-// hi!
-//
+// My Module 1
 
-/// lols
-
-///qwefqwe
-///dqwd qwdi qjwidij
+export default {};
