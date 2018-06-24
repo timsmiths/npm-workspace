@@ -1,6 +1,6 @@
 {
-  "name": "0-module",
-  "version": "0.0.0",
+  "name": "@timsmiths/0-module",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
