@@ -1,6 +1,6 @@
 {
   "name": "@timsmiths01/example-workspace",
-  "version": "independent",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "repository": "https://github.com/timsmiths/npm-workspace",
