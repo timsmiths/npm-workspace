@@ -1,15 +1,12 @@
 {
   "name": "@timsmiths01/1-module",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepublish": "echo 'HECLLO!!!!!!!!!!!!!!!!!!'"
-  },
-  "repository": "https://github.com/timsmiths/npm-workspace/tree/master/packages/1-module",
-  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/timsmiths/npm-workspace/tree/master/packages/1-module",
   "author": "",
   "license": "ISC"
 }
